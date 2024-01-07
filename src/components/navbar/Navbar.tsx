@@ -1,28 +1,18 @@
-import { Headers as Props } from '../headers/Header'
+import { NavbarItem } from './components/NavbarItem'
 
-export const Navbar = () => {
-  return (
-    <nav className="navbar navbar-expand-lg navbar-light bg-light">
-      <div className="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul className="navbar-nav me-auto mb-2 mb-lg-0">
-          <li className="nav-item">
-            <a className="nav-link active" aria-current="page" href="#">
-              <a>Quienes somos?</a>
-            </a>
-          </li>
-          <li className="nav-item">
-            <a className="nav-link" href="#">
-              Contactanos
-            </a>
-          </li>
-          <li className="nav-item dropdown">
-            <a className="nav-link" href="#" id="navbarDropdown">
-              Servicios
-            </a>
-          </li>
-        </ul>
-      </div>
-    </nav>
-  )
-}
+import { ROUTES as R } from '../../constants/url.constant'
+
+export const Navbar = () => (
+  <nav className='navbar navbar-expand-lg navbar-light bg-light'>
+    <div className='collapse navbar-collapse' id='navbarSupportedContent'>
+      <ul className='navbar-nav me-auto mb-2 mb-lg-0'>
+        <NavbarItem text={R.Home.text} url={R.Home.url} />
+        <NavbarItem text={R.About.text} url={R.About.url} />
+        <NavbarItem text={R.Contact.text} url={R.Contact.url} />
+        <NavbarItem text={R.Login.text} url={R.Login.url} />
+      </ul>
+    </div>
+  </nav>
+)
+
 export default Navbar
