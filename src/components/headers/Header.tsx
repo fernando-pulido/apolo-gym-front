@@ -3,8 +3,5 @@ export const Headers = () => (
     <a className="navbar-brand" href="#">
       Apolo Gym
     </a>
-    <button className="navbar-toggler" type="button">
-      <span className="navbar-toggler-icon"></span>
-    </button>
   </div>
 )
