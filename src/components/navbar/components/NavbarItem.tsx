@@ -8,8 +8,8 @@ type Props = {
 }
 
 export const NavbarItem: FC<Props> = ({ text, url, className }) => (
-  <li className={`nav-item ${className ?? ''}`}>
-    <a className='nav-link' href={url}>
+  <li className={` ${className ?? ''}`}>
+    <a className='nav-link px-2 link-secondary' href={url}>
       {text}
     </a>
   </li>
