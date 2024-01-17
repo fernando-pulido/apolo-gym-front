@@ -13,12 +13,12 @@ const Content = () => {
       <header>
         <Navbar />
       </header>
-      <main className='container'>
+      <main className='container-fluid'>
         <Suspense fallback={<Loader />}>
           <RouterProvider router={GenerateRoutes()} />
         </Suspense>
       </main>
-      <footer style={{ backgroundColor: '#ff00ff' }}>el footer</footer>
+      <footer style={{ backgroundColor: '#a9a9a9' }}>el footer</footer>
     </div>
   )
 }
