@@ -1,39 +1,51 @@
-const Home = () => (
-  <div
-    id='carouselExampleControls'
-    className='carousel slide'
-    data-bs-ride='carousel'
-  >
-    <div className='carousel-inner'>
-      <div className='carousel-item active'>
-        <img src='...' className='d-block w-100' alt='...' />
-      </div>
-      <div className='carousel-item'>
-        <img src='...' className='d-block w-100' alt='...' />
-      </div>
-      <div className='carousel-item'>
-        <img src='...' className='d-block w-100' alt='...' />
-      </div>
-    </div>
-    <button
-      className='carousel-control-prev'
-      type='button'
-      data-bs-target='#carouselExampleControls'
-      data-bs-slide='prev'
-    >
-      <span className='carousel-control-prev-icon' aria-hidden='true' />
-      <span className='visually-hidden'>Previous</span>
-    </button>
-    <button
-      className='carousel-control-next'
-      type='button'
-      data-bs-target='#carouselExampleControls'
-      data-bs-slide='next'
-    >
-      <span className='carousel-control-next-icon' aria-hidden='true' />
-      <span className='visually-hidden'>Next</span>
-    </button>
-  </div>
-)
+function Home() {
+  return (
+    <div id='carouselExample' className='carousel slide'>
+      <div className='carousel-inner'>
+        <div className='carousel-item active'>
+          <img
+            src='/src/image/img12.jpg'
+            className='d-block w-100'
+            alt='imagen 1'
+          />
+        </div>
 
+        <div className='carousel-item'>
+          <img
+            src='/src/image/img11.jpg'
+            className='d-block w-100'
+            alt='imagen 2'
+          />
+        </div>
+
+        <div className='carousel-item'>
+          <img
+            src='/src/image/img5.jpg'
+            className='d-block w-100'
+            alt='imagen 3'
+          />
+        </div>
+      </div>
+
+      <button
+        className='carousel-control-prev'
+        type='button'
+        data-bs-target='#carouselExample'
+        data-bs-slide='prev'
+      >
+        <span className='carousel-control-prev-icon' aria-hidden='true'></span>
+        <span className='visually-hidden'>Previous</span>
+      </button>
+      <button
+        className='carousel-control-next'
+        type='button'
+        data-bs-target='#carouselExample'
+        data-bs-slide='next'
+      >
+        <span className='carousel-control-next-icon' aria-hidden='true'></span>
+        <span className='visually-hidden'>Next</span>
+      </button>
+    </div>
+  )
+}
 export default Home

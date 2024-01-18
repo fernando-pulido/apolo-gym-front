@@ -5,6 +5,7 @@ import { Loader } from '../components/loader'
 import { Navbar } from '../components/navbar'
 
 import { GenerateRoutes } from '../Routes/routes'
+
 import './Layout.css'
 
 const Content = () => {
@@ -17,7 +18,10 @@ const Content = () => {
         <Suspense fallback={<Loader />}>
           <RouterProvider router={GenerateRoutes()} />
         </Suspense>
+
+        <section></section>
       </main>
+
       <footer style={{ backgroundColor: '#a9a9a9' }}>el footer</footer>
     </div>
   )

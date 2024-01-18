@@ -2,11 +2,10 @@
   height: 100%;
 
   main {
-    height: calc(100vh - 144px);
-    margin-top: 16px;
-    margin-bottom: 16px;
-    background-color: #f1ece7;
+    height: calc(100vh - 100px);
+    background-color: #232d3f;
   }
+
   footer {
     position: absolute;
     bottom: 0;
