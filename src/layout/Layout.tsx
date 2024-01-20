@@ -18,8 +18,6 @@ const Content = () => {
         <Suspense fallback={<Loader />}>
           <RouterProvider router={GenerateRoutes()} />
         </Suspense>
-
-        <section></section>
       </main>
 
       <footer style={{ backgroundColor: '#a9a9a9' }}>el footer</footer>

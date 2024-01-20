@@ -1,30 +1,27 @@
+import './Home.css'
+import Img1 from './../../assets/image/img1.jpg'
+import Img2 from './../../assets/image/img2.jpg'
+import Img3 from './../../assets/image/img3.jpg'
+
 function Home() {
+  const data = [
+    { src: Img1, alt: 'image of a gym' },
+    { src: Img2, alt: '' },
+    { src: Img3, alt: '' },
+  ]
   return (
     <div id='carouselExample' className='carousel slide'>
       <div className='carousel-inner'>
-        <div className='carousel-item active'>
-          <img
-            src='/src/image/img12.jpg'
-            className='d-block w-100'
-            alt='imagen 1'
-          />
-        </div>
-
-        <div className='carousel-item'>
-          <img
-            src='/src/image/img11.jpg'
-            className='d-block w-100'
-            alt='imagen 2'
-          />
-        </div>
-
-        <div className='carousel-item'>
-          <img
-            src='/src/image/img5.jpg'
-            className='d-block w-100'
-            alt='imagen 3'
-          />
-        </div>
+        {data.map((item, index) => (
+          <div
+            key={item.src}
+            className={`carousel-item carousel-image ${
+              index === 0 && 'active'
+            }`}
+          >
+            <img src={item.src} alt={item.alt} />
+          </div>
+        ))}
       </div>
 
       <button
