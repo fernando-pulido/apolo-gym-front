@@ -4,6 +4,9 @@ import Img4 from '../../assets/image/img4.jpg'
 import Img5 from '../../assets/image/img7.jpg'
 import Img6 from '../../assets/image/img6.png'
 import Img7 from '../../assets/image/img7.jpg'
+import Img1 from '../../assets/image/img1.jpg'
+import Img2 from '../../assets/image/img2.jpg'
+import Img3 from '../../assets/image/img3.jpg'
 
 const CardsAbout = () => {
   return (
@@ -12,6 +15,7 @@ const CardsAbout = () => {
         <div className='col'>
           <div className='card'>
             <img src={Img4} className='card-img-top' alt='...' />
+
             <div className='card-body'>
               <h5 className='card-title'>Plan mensual</h5>
               <p className='card-text'>
@@ -63,7 +67,7 @@ const CardsAbout = () => {
       <div className='row row-cols-1 row-cols-md-2 g-4'>
         <div className='col'>
           <div className='card'>
-            <img src={Img4} className='card-img-top' alt='...' />
+            <img src={Img1} className='card-img-top' alt='...' />
             <div className='card-body'>
               <h5 className='card-title'>Plan mensual</h5>
               <p className='card-text'>
@@ -76,7 +80,7 @@ const CardsAbout = () => {
 
         <div className='col'>
           <div className='card'>
-            <img src={Img5} className='card-img-top' alt='...' />
+            <img src={Img2} className='card-img-top' alt='...' />
             <div className='card-body'>
               <h5 className='card-title'>Plan amigos</h5>
               <p className='card-text'>
@@ -88,7 +92,7 @@ const CardsAbout = () => {
 
         <div className='col'>
           <div className='card'>
-            <img src={Img6} className='card-img-top' alt='...' />
+            <img src={Img3} className='card-img-top' alt='...' />
             <div className='card-body'>
               <h5 className='card-title'>Tiquetera de 15 dias</h5>
               <p className='card-text'>
@@ -101,7 +105,7 @@ const CardsAbout = () => {
 
         <div className='col'>
           <div className='card'>
-            <img src={Img7} className='card-img-top' alt='...' />
+            <img src={Img1} className='card-img-top' alt='...' />
             <div className='card-body'>
               <h5 className='card-title'>Tiquetera de 10 dias</h5>
               <p className='card-text'>

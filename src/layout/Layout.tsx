@@ -3,6 +3,7 @@ import { RouterProvider } from 'react-router-dom'
 
 import { Loader } from '../components/loader'
 import { Navbar } from '../components/navbar'
+import FooterPag from '../components/footer/Footer'
 
 import { GenerateRoutes } from '../Routes/routes'
 
@@ -20,7 +21,9 @@ const Content = () => {
         </Suspense>
       </main>
 
-      <footer style={{ backgroundColor: '#a9a9a9' }}>el footer</footer>
+      <footer style={{ backgroundColor: '#a9a9a9' }}>
+        <FooterPag />
+      </footer>
     </div>
   )
 }
