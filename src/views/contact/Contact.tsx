@@ -1,10 +1,10 @@
 import './Concat.css'
-import img7 from '../../assets/image/img7.jpg'
+import img8 from '../../assets/image/img8.jpg'
 const Contact = () => {
   return (
     <div className='father'>
       <div className='card'>
-        <img src={img7} className='card-img-top' alt='...' />
+        <img src={img8} className='card-img-top' alt='...' />
         <div className='card-body'>
           <h5 className='card-title'>Contactanos a nuestras redes sociales</h5>
         </div>

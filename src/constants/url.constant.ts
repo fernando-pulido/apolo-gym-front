@@ -7,19 +7,19 @@ type BasicRoutes = 'About' | 'Contact' | 'Login' | 'Home'
 
 export const ROUTES: Record<BasicRoutes, Routes> = {
   About: {
-    text: 'Quienes somos?',
+    text: 'Planes disponibles',
     url: '/about',
   },
   Contact: {
-    text: 'Contactarnos',
+    text: 'Redes Sociales',
     url: '/contact',
   },
   Login: {
-    text: 'Iniciar Sesión',
+    text: 'Inicio Sesión',
     url: '/login',
   },
   Home: {
-    text: 'Inicio',
+    text: 'ApoloGym',
     url: '/',
   },
 }
