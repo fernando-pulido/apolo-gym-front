@@ -1,5 +1,6 @@
 import { FC } from 'react'
 // import { Link } from 'react-router-dom'
+import './NavbarrItem.css'
 
 type Props = {
   url: string
@@ -8,8 +9,8 @@ type Props = {
 }
 
 export const NavbarItem: FC<Props> = ({ text, url, className }) => (
-  <li className={` ${className ?? ''}`}>
-    <a className='nav-link px-2 link-secondary' href={url}>
+  <li className={`nav-col${className ?? ''}`}>
+    <a className='nav-col nav-link px-2 link-secondary' href={url}>
       {text}
     </a>
   </li>

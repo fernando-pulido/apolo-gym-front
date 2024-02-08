@@ -3,10 +3,11 @@ import { NavbarItem } from './components/NavbarItem'
 import { ROUTES as R } from '../../constants/url.constant'
 
 import './Navbar.css'
+import './components/NavbarrItem.css'
 
 export const Navbar = () => (
   <nav
-    className='nav-content d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start'
+    className='nav-col nav-content d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start'
     style={{ backgroundColor: '#232323' }}
   >
     <ul className='nav'>
